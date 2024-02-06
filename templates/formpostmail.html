@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formpostmail</title>
+</head>
+<body>
+    {% if resultado == 'No encontrado' %}
+        <h1>El usuario {{ username }} no a sido encontrado</h1>
+    {% else %}
+        <h1>El correo del usuario {{ username }} es: {{ resultado }}</h1>
+    {% endif %}
+    <a href="/getmail">Obtener mail</a>
+    <a href="/addmail">Añadir mail</a>
+</body>
+</html>
